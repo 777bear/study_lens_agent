@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+
+:root {
+  --paper: #f5f2e9;
+  --ink: #16231f;
+  --teal: #0c746a;
+  --teal-soft: #dcece6;
+  --amber: #e5a444;
+  --line: #d8d4c8;
+}
+
+.stApp { background: var(--paper); color: var(--ink); }
+.stApp, .stApp button, .stApp input, .stApp textarea { font-family: "Noto Sans SC", sans-serif; }
+[data-testid="stSidebar"] { background: #15241f; color: #f7f3e9; border-right: 1px solid #2e3d38; }
+[data-testid="stSidebar"] * { color: inherit; }
+[data-testid="stSidebar"] [data-testid="stFileUploaderDropzone"] { background: #20342d; border-color: #496058; }
+[data-testid="stSidebar"] .stButton > button[kind="primary"] { background: #e7a846; color: #18241f; border: 0; font-weight: 700; }
+[data-testid="stSidebar"] .stButton > button { border-color: #5c6e68; }
+[data-testid="stSidebar"] .stButton > button[kind="secondary"] { background: #f7f4ea; color: #18241f; border-color: #f7f4ea; font-weight: 700; }
+[data-testid="stSidebar"] .stButton > button[kind="secondary"] * { color: #18241f; }
+.side-brand { font-family: "DM Serif Display", Georgia, serif; font-size: 32px; color: white; }
+.side-brand span { color: #8ac3b3; font-size: 17px; margin-left: 4px; }
+
+.block-container { max-width: 1280px; padding-top: 2.5rem; padding-bottom: 6rem; }
+.hero { min-height: 430px; display: flex; flex-direction: column; justify-content: center; padding: 64px 72px; border-radius: 30px; border: 1px solid var(--line); background: radial-gradient(circle at 82% 14%, rgba(229,164,68,.26), transparent 28%), linear-gradient(130deg,#fffdf7,#e6f2ed); box-shadow: 0 24px 70px rgba(30,52,45,.09); }
+.hero-kicker, .section-label, .quiz-label { color: var(--teal); font-size: 12px; letter-spacing: .18em; font-weight: 800; text-transform: uppercase; }
+.hero h1 { margin: .35em 0 .3em; max-width: 900px; font: 400 clamp(46px,6vw,82px)/1.02 "DM Serif Display", Georgia, "Noto Serif CJK SC", serif; color: var(--ink); }
+.hero h1 em { color: var(--teal); font-weight: 400; }
+.hero p { max-width: 750px; margin: 0; color: #5b6b65; font-size: 19px; line-height: 1.8; }
+.section-label { margin-top: 52px; margin-bottom: 12px; }
+.step-card { min-height: 210px; padding: 26px; background: #fffdf7; border: 1px solid var(--line); border-radius: 20px; }
+.step-card span { color: var(--amber); font-family: "DM Serif Display", serif; font-size: 30px; }
+.step-card h3 { margin: 17px 0 8px; font-size: 19px; }
+.step-card p { color: #65736e; line-height: 1.75; font-size: 14px; }
+.empty-note { margin-top: 22px; padding: 20px 24px; border: 1px dashed #9fb0aa; border-radius: 16px; color: #5f6e69; text-align: center; }
+.result-summary { color: #5c6d66; font-size: 19px; max-width: 780px; }
+.reading-sheet { max-width: 900px; margin: 0 auto; padding: 34px 46px; background: #fffdf8; border: 1px solid var(--line); border-radius: 20px; line-height: 1.9; }
+.reading-sheet h2 { margin-top: 2em; font-family: "DM Serif Display", Georgia, serif; color: var(--ink); }
+.reading-sheet blockquote { border-left-color: var(--amber); background: #fff4dc; padding: 10px 18px; }
+.question-chips { padding: 18px 22px; margin: 16px 0 24px; border-radius: 16px; background: var(--teal-soft); color: #285149; line-height: 2; }
+.quiz-label { margin-top: 24px; }
+[data-baseweb="tab-list"] { gap: 10px; border-bottom: 1px solid var(--line); }
+[data-baseweb="tab"] { border-radius: 999px 999px 0 0; padding: 12px 20px; }
+[aria-selected="true"] { color: var(--teal) !important; }
+.stDownloadButton > button { background: var(--teal); color: white; border: 0; font-weight: 700; }
+
+@media (max-width: 760px) {
+  .block-container { padding: 1rem .8rem 4rem; }
+  .hero { min-height: 350px; padding: 38px 26px; border-radius: 22px; }
+  .reading-sheet { padding: 24px 20px; }
+}

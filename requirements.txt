@@ -1,0 +1,8 @@
+streamlit>=1.39,<2
+python-pptx>=1.0,<2
+pypdf>=5,<7
+PyMuPDF>=1.24,<2
+openai>=1.55,<3
+Markdown>=3.7,<4
+Pillow>=10,<13
+
